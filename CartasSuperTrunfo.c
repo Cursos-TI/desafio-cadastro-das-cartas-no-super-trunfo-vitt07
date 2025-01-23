@@ -1,28 +1,37 @@
 #include <stdio.h>
 
-int main() {
+int main (){
 
-int idade, matricula; 
-float altura;
-char nome [50];
+//dados das cartas
+int populacao;
+int area;
+int pib;
+int pontosturisticos;
 
-printf("Digite sua idade?\n");
-scanf("%d", &idade);
+//inserir dados das cartas
+printf("Entre com a População: \n");
+scanf("%d", &populacao);
 
-printf("Digite sua altura?\n");
-scanf("%f", &altura);
+printf("Entre com a Área: \n");
+scanf("%d", &area);
 
-printf("digite seu nome?\n");
-scanf("%s", &nome);
+printf("Entre com a PIB: \n");
+scanf("%d", &pib);
 
-printf("digite sua matricula?\n");
-scanf("%d", &matricula);
+printf("Entre com os Pontos Turisticos: \n");
+scanf("%d", &pontosturisticos);
 
-printf("nome do aluno: %s - marticula: %d", nome, matricula);
-printf("idade: %d - altura: %f", idade, altura);
+//mostar os dados das cartas
+printf("Exibir dados da cicade:\n");
+printf("População: %d\n", populacao);
+printf("Área: %d\n", area);
+printf("PIB: %d\n", pib);
+printf("Pontos Turisticos: %d\n", pontosturisticos);
+
+
 
 return 0;
 
 
-}
 
+}
