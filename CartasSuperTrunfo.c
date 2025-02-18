@@ -2,19 +2,28 @@
 
 int main (){
 
-//dados das cartas.
+//dados das cartas 1.
 int populacao;
 int area;
 int pib;
 int pontosturisticos;
+char nome1 [100];
+int codigo;
+
 //dados das cartas numero 2.
 int populacao2;
 int area2;
 int pib2;
 int pontosturisticos2;
+char nome [100];
+int codigo2;
 
 //inserir dados das cartas numero 1.
 printf("*****Carta numero 1:***** \n");
+
+printf("Entre com o nome da cidade: \n");
+scanf("%s", &nome1);
+
 printf("Entre com a População: \n");
 scanf("%d", &populacao);
 
@@ -24,30 +33,19 @@ scanf("%d", &area);
 printf("Entre com a PIB: \n");
 scanf("%d", &pib);
 
-printf("Entre com os Pontos Turisticos: \n");
+printf("Entre com a Código: \n");
+scanf("%d", &codigo);
+
+printf("Entre com os Pontos Turisticos:\n");
 scanf("%d", &pontosturisticos);
 
-//mostar os dados das cartas.
-printf("Exibir dados da cicade:\n");
-printf("População: %d\n", populacao);
-printf("Área: %d\n", area);
-printf("PIB: %d\n", pib);
-printf("Pontos Turisticos: %d\n", pontosturisticos);
 
+//inserir dados das cartas numero 1.
+printf("\n\n*****Carta numero 2:***** \n");
 
-//calculos da Densidade populacional e PIB per Capital.
-double DensidadePopulacional = (double) populacao / area;
-double pibpercapital = (double) pib / populacao;
-double superpoder = (double) populacao + area + pib + pontosturisticos + DensidadePopulacional + pibpercapital;
-printf("Densidade Populacional: %.2f\n" , DensidadePopulacional);
-printf("PIB per Capita: %.2f\n" , pibpercapital);
-printf("Super Poder: %.2f\n\n\n" , superpoder);
+printf("Entre com o nome da cidade: \n");
+scanf("%s", &nome);
 
-
-                                              //carta numero 2.
-
-//inserir dados das cartas numero 2.
-printf("*****Carta numero 2:****** \n\n");
 printf("Entre com a População: \n");
 scanf("%d", &populacao2);
 
@@ -57,40 +55,31 @@ scanf("%d", &area2);
 printf("Entre com a PIB: \n");
 scanf("%d", &pib2);
 
-printf("Entre com os Pontos Turisticos: \n");
+printf("Entre com a Código: \n");
+scanf("%d", &codigo2);
+
+printf("Entre com os Pontos Turisticos:\n");
 scanf("%d", &pontosturisticos2);
 
-//mostar os dados das cartas numero 2.
-printf("Exibir dados da cicade:\n");
+
+//mostar os dados das cartas 1.
+printf("\n\n***Carta 1:***\n");
+printf("Nome da Cidade: %s\n", nome1);
+printf("População: %d\n", populacao);
+printf("Área: %d\n", area);
+printf("PIB: %d\n", pib);
+printf("Pontos Turisticos: %d\n", pontosturisticos);
+printf("Código: %d\n", codigo);
+
+//mostar os dados das cartas 2.
+printf("\n\n***Carta 2:***\n");
+printf("Nome da Cidade: %s\n", nome);
 printf("População: %d\n", populacao2);
 printf("Área: %d\n", area2);
 printf("PIB: %d\n", pib2);
 printf("Pontos Turisticos: %d\n", pontosturisticos2);
-
-//calculos da Densidade populacional e PIB per Capitalnumero 2.
-double DensidadePopulacional2 =(double) populacao2 / area2;
-double pibpercapital2 = (double) pib / populacao2;
-double superpoder2 = (double) populacao2 + area2 + pib2 + pontosturisticos2 + DensidadePopulacional2 + pibpercapital2;
-printf("Densidade Populacional: %.2f\n" , DensidadePopulacional2);
-printf("PIB per Capita: %.2f\n" , pibpercapital2);
-printf("Super Poder: %.2f\n\n\n" , superpoder2);
+printf("Código: %d\n", codigo2);
 
 
-if (superpoder2 > superpoder)
-{
-    printf("*****Carta Vencedora numero 2 com:***** %.2f\n" , superpoder2);
-}
-
-if (superpoder > superpoder2)
-{
-    printf("*Carta Vencedora Numero 1 com: %.2f\n" , superpoder);
-
-}
-
-
-
-
-
-
-
+return 0;
 }
