@@ -4,8 +4,8 @@ int main (){
 
 //dados das cartas 1.
 int populacao;
-int area;
-int pib;
+float area;
+float pib;
 int pontosturisticos;
 char nome1 [100];
 int codigo;
@@ -28,10 +28,10 @@ printf("Entre com a População: \n");
 scanf("%d", &populacao);
 
 printf("Entre com a Área: \n");
-scanf("%d", &area);
+scanf("%f", &area);
 
 printf("Entre com a PIB: \n");
-scanf("%d", &pib);
+scanf("%f", &pib);
 
 printf("Entre com a Código: \n");
 scanf("%d", &codigo);
